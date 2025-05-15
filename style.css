@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    align-items: center;
+    color: white;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Hero Section */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+}
+
+.hero {
+    text-align: center;
+    align-items: center;
+}
+
+.hero .text {
+    text-align: center;
+}
+
+.hero .img {
+    justify-items: center;
+    border-radius: 10px;
+    width: 285px;
+    border: 10px solid #ddd;
+}
+
+.hero button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero button:hover {
+    background-color: #0056b3;
+}
+
+/* About Me Section */
+.about-me {
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.about-me,
+.portfolio {
+    text-align: center;
+    justify-items: center;
+}
+
+.about-me .text-me {
+    margin-top: 40px;
+    margin-left: 330px;
+}
+
+.text-me h2 {
+    color: #007bff;
+}
+
+.about-me .info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.info-item {
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.info-item span {
+    color: #007bff;
+}
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    align-items: center;
+    margin: 60px auto;
+    padding: 10px;
+    width: 91.3%;
+    background-color: white;
+    border-radius: 10px;
+    height: 337px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+}
+
+
+.portfolio h3 {
+    font-size: small;
+    margin-top: 15px;
+}
+
+.portfolio p {
+    font-size: small;
+    margin-top: 0px;
+}
+
+.portfolio-gallery {
+    justify-content: space-around;
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.project {
+    flex: 0 0 auto;
+    /* margin-right: 20px; */
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+}

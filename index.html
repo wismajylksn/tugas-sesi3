@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-top: -30px;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Wisma Jaya Laksana</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#messageModal">Message</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero d-flex align-items-center text-center flex-column flex-md-row">
+            <div class="col-md-7">
+                <h1>Selamat Datang di Website Saya</h1>
+                <p>Saya adalah Full Stack Developer Junior...</p>
+                <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+            </div>
+            <div class="col-md-6 text-center" style="margin-top: 25px;">
+                <img src="img/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle" width="200">
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-me mt-5">
+            <h2>About Me</h2>
+            <p>Saya Wisma Jaya Laksana, mahasiswa Teknik Informatika...</p>
+            <div class="info text-center ">
+                <div class="info-item"><span>Full Name</span>: Wisma Jaya Laksana</div>
+                <div class="info-item"><span>Education</span>: S1 Informatika</div>
+                <div class="info-item"><span>Pekerjaan</span>: Programmer</div>
+                <div class="info-item"><span>Contact</span>: wsmajlksna.com</div>
+                <div class="info-item"><span>Hobi</span>: Membaca, Coding</div>
+                <div class="info-item "><span>Alamat</span>: Jakarta</div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio mt-5">
+            <h2>Portofolio</h2>
+            <div class="row text-center">
+                <div class="col-md-4 col-sm-12 mb-3">
+                    <img src="img/portofolio-1.jpg" class="img-fluid">
+                    <h3>Proyek 1</h3>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-3">
+                    <img src="img/portofolio-2.jpg" class="img-fluid">
+                    <h3>Proyek 2</h3>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-3">
+                    <img src="img/portofolio-3.jpg" class="img-fluid">
+                    <h3>Proyek 3</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-light py-3 mt-5">
+        © 2025 Wisma. All rights reserved.
+    </footer>
+
+    <!-- Message Modal -->
+    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="messageModalLabel">Masukkan Pesan Anda</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control mb-2" placeholder="Nama Lengkap">
+                    <input type="text" class="form-control mb-2" placeholder="Nomor Telepon">
+                    <input type="email" class="form-control mb-2" placeholder="Masukkan Email">
+                    <textarea class="form-control" placeholder="Pesan"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
